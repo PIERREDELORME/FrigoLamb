@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(python3 -c ':*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(mv site:*)",
+      "Bash(sed -i '' 's|site/index.html|docs/index.html|g' \"Ouvrir le site.html\")"
     ]
   }
 }
