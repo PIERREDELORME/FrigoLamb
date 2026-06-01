@@ -1,161 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Glace Frigo-Lamb</title>
-  <meta name="description" content="Contactez Glace Frigo-Lamb pour une soumission gratuite. Téléphone : 819-358-5113. Warwick, Québec." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Extra styles for contact page */
-    .page-hero {
-      padding-bottom: 3rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous – Glace Frigo-Lamb</title>
+  <meta name="description" content="Contactez Glace Frigo-Lamb pour une soumission de livraison de glace. Appelez le 819-358-5113 ou remplissez notre formulaire de demande en ligne.">
+  <meta name="keywords" content="contact Glace Frigo-Lamb, soumission livraison glace, demander soumission glace Québec">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
         <div class="logo-icon">❄</div>
-        <div class="logo-text">
-          <span>Glace Frigo-Lamb</span>
-          <span>Warwick, Québec</span>
-        </div>
+        <span>Glace Frigo-Lamb</span>
       </a>
-      <ul class="navbar-nav">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="festivals.html">Festivals &amp; événements</a></li>
-        <li><a href="depanneurs.html">Dépanneurs</a></li>
-        <li><a href="territoire.html">Territoire</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="burger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="festivals.html">Festivals &amp; événements</a>
+        <a href="depanneurs.html">Dépanneurs</a>
+        <a href="territoire.html">Territoire</a>
+        <a href="contact.html" class="nav-cta active">Contact</a>
+      </nav>
     </div>
-    <div class="mobile-nav">
-      <a href="index.html">Accueil</a>
-      <a href="festivals.html">Festivals &amp; événements</a>
-      <a href="depanneurs.html">Dépanneurs</a>
-      <a href="territoire.html">Territoire</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
-    </div>
-  </nav>
+  </header>
 
-  <!-- ===== PAGE HERO ===== -->
+  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Accueil</a>
-        <span>/</span>
-        <span>Contact</span>
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="current">Contact</span>
+        </div>
+        <h1>Contactez-nous pour une soumission</h1>
+        <p>Remplissez le formulaire ou appelez-nous directement. Nous vous répondons rapidement.</p>
       </div>
-      <div class="badge" style="background:rgba(0,191,255,0.15);color:#00BFFF;">Soumission gratuite</div>
-      <h1>Contactez-nous pour<br>une soumission</h1>
-      <p>Remplissez le formulaire ci-dessous ou appelez-nous directement. Nous vous répondrons dans les plus brefs délais.</p>
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
+  <!-- CONTACT SECTION -->
   <section class="contact-section">
     <div class="container">
-      <div style="max-width:520px">
+      <div class="contact-grid">
 
-        <!-- Info col -->
-        <div class="contact-info reveal">
-          <h3>Nos coordonnées</h3>
+        <!-- INFO -->
+        <div class="contact-info-block">
+          <h3>Joignez-nous directement</h3>
 
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📍</div>
-            <div class="contact-detail-text">
-              <span>Adresse</span>
-              <p>21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</p>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <div class="clabel">Téléphone</div>
+              <div class="cvalue"><a href="tel:+18193585113">819-358-5113</a></div>
             </div>
           </div>
 
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📞</div>
-            <div class="contact-detail-text">
-              <span>Téléphone</span>
-              <a href="tel:8193585113">819-358-5113</a>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-text">
+              <div class="clabel">Courriel</div>
+              <div class="cvalue"><a href="mailto:info@glacefrigolamb.com">info@glacefrigolamb.com</a></div>
             </div>
           </div>
 
-          <div class="contact-detail">
-            <div class="contact-detail-icon">✉️</div>
-            <div class="contact-detail-text">
-              <span>Courriel</span>
-              <a href="mailto:info@glacefrigolamb.com">info@glacefrigolamb.com</a>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <div class="contact-detail-icon">🗺️</div>
-            <div class="contact-detail-text">
-              <span>Zone de livraison</span>
-              <p>Rayon de 3h autour de Warwick<br>Centre-du-Québec et régions</p>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <div class="clabel">Adresse</div>
+              <div class="cvalue">21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</div>
             </div>
           </div>
 
           <div class="contact-actions">
-            <a href="tel:8193585113" class="btn btn-accent">
-              📞 Appeler maintenant
+            <a href="tel:+18193585113" class="btn btn-primary">
+              <i class="fa-solid fa-phone"></i>
+              Appeler maintenant
             </a>
-            <a href="mailto:info@glacefrigolamb.com" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.35)">
-              ✉️ Envoyer un courriel
+            <a href="mailto:info@glacefrigolamb.com" class="btn btn-outline-blue">
+              <i class="fa-solid fa-envelope"></i>
+              Envoyer un courriel
             </a>
           </div>
 
-          <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)">
-            <p style="color:rgba(255,255,255,0.5);font-size:0.82rem;line-height:1.7">
-              Disponible pour tous types de besoins en glace — festivals, commerces, chantiers et plus encore.
+          <!-- Territoire note -->
+          <div style="margin-top: 36px; padding: 20px; background: rgba(31,122,224,0.06); border-radius: 10px; border: 1px solid rgba(31,122,224,0.15);">
+            <h4 style="color: var(--dark-blue); font-size: 0.9375rem; margin-bottom: 8px;">
+              <i class="fa-solid fa-map-location-dot" style="color: var(--blue); margin-right: 6px;"></i>
+              Territoire desservi
+            </h4>
+            <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.65;">
+              Nous livrons dans un rayon de 3 heures autour de Warwick : Centre-du-Québec, Estrie, Mauricie, Québec, Montérégie, Beauce, Lanaudière.
             </p>
+            <a href="territoire.html" style="font-size: 0.875rem; color: var(--blue); font-weight: 600; display: inline-block; margin-top: 10px;">
+              Voir le territoire en détail →
+            </a>
           </div>
         </div>
 
+        <!-- FORM -->
+        <div class="form-card">
+          <h3>Demander une soumission</h3>
+          <p class="form-sub">Complétez le formulaire ci-dessous et nous vous répondrons dans les meilleurs délais.</p>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="entreprise">Entreprise</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="(819) 000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="courriel">Courriel *</label>
+                <input type="email" id="courriel" name="courriel" placeholder="vous@exemple.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="type_besoin">Type de besoin</label>
+              <select id="type_besoin" name="type_besoin">
+                <option value="" disabled selected>Sélectionner un type...</option>
+                <option value="festival">Festival / événement</option>
+                <option value="depanneur">Dépanneur / épicerie</option>
+                <option value="restaurant">Restaurant / bar</option>
+                <option value="station">Station-service</option>
+                <option value="chantier">Chantier / industrie</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="quantite">Quantité estimée</label>
+                <input type="text" id="quantite" name="quantite" placeholder="Ex : 200 sacs de 7 kg">
+              </div>
+              <div class="form-group">
+                <label for="date">Date de l'événement / besoin</label>
+                <input type="date" id="date" name="date">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Décrivez vos besoins : région, fréquence, détails particuliers..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-lg btn-submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              Envoyer ma demande
+            </button>
+
+          </form>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===== MAP SECTION ===== -->
-  <section>
+  <!-- FAQ RAPIDE -->
+  <section style="background: var(--white); padding: 88px 0;">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Notre emplacement</div>
-        <h2>Basé à Warwick, Québec</h2>
-      </div>
-      <div class="map-container reveal">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2753.5!2d-71.9756!3d45.9534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7a79d1a1ab4c7%3A0x1a1b1c1d1e1f2021!2s21%20Rue%20Saint-Louis%20E%2C%20Warwick%2C%20QC%20J0A%201M0!5e0!3m2!1sfr!2sca!4v1700000000000!5m2!1sfr!2sca"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Glace Frigo-Lamb — 21 Rue Saint-Louis E, Warwick QC">
-        </iframe>
+      <div class="section-label">Questions fréquentes</div>
+      <h2 class="section-title">Vous avez des questions ?</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px;">
+
+        <div style="background: var(--light-gray); border-radius: 10px; padding: 28px;">
+          <h4 style="color: var(--dark-blue); margin-bottom: 10px; font-size: 1rem;">Quel est votre délai de livraison ?</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65;">Nous planifions les livraisons selon vos besoins. Contactez-nous le plus tôt possible pour les événements importants.</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 10px; padding: 28px;">
+          <h4 style="color: var(--dark-blue); margin-bottom: 10px; font-size: 1rem;">Livrez-vous en dehors de la région ?</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65;">Nous desservons un rayon de 3 heures autour de Warwick. Contactez-nous pour vérifier si votre région est couverte.</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 10px; padding: 28px;">
+          <h4 style="color: var(--dark-blue); margin-bottom: 10px; font-size: 1rem;">Quels formats de glace proposez-vous ?</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65;">Nous proposons des sacs de glace de 2,5 kg et des poches de glace de 7 kg, adaptés à différents usages.</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 10px; padding: 28px;">
+          <h4 style="color: var(--dark-blue); margin-bottom: 10px; font-size: 1rem;">Faites-vous des livraisons régulières ?</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.65;">Oui, nous établissons des calendriers de livraison réguliers pour les commerces. Contactez-nous pour en discuter.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="navbar-logo" style="margin-bottom:1rem">
-            <div class="logo-icon">❄</div>
-            <div class="logo-text">
-              <span>Glace Frigo-Lamb</span>
-              <span>Warwick, Québec</span>
-            </div>
-          </div>
-          <p>Fournisseur de glace depuis plus de 30 ans. Livraison pour festivals, événements, dépanneurs et commerces partout au Québec.</p>
+          <h3>❄ Glace Frigo-Lamb</h3>
+          <p>Fournisseur de glace fiable pour les festivals, événements, dépanneurs et commerces du Québec depuis plus de 30 ans.</p>
+          <br>
+          <p>21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -169,21 +231,20 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>
-            21 Rue Saint-Louis E<br>
-            Warwick, QC J0A 1M0<br><br>
-            <a href="tel:8193585113" style="color:rgba(255,255,255,0.7);">819-358-5113</a>
-          </p>
+          <ul>
+            <li><a href="tel:+18193585113">819-358-5113</a></li>
+            <li><a href="contact.html">Demander une soumission</a></li>
+            <li><a href="territoire.html">Territoire desservi</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Glace Frigo-Lamb. Tous droits réservés.</span>
-        <span>Warwick, Québec, Canada</span>
+        <p>&copy; 2025 Glace Frigo-Lamb. Tous droits réservés.</p>
+        <p>Warwick, Québec, Canada</p>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Retour en haut">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

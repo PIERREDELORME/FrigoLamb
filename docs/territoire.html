@@ -1,167 +1,214 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Territoire desservi — Glace Frigo-Lamb</title>
-  <meta name="description" content="Glace Frigo-Lamb dessert un territoire couvrant jusqu'à 3 heures de route autour de Warwick : Centre-du-Québec, Estrie, Mauricie, Québec, Montérégie, Beauce, Lanaudière." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Territoire desservi – Glace Frigo-Lamb</title>
+  <meta name="description" content="Glace Frigo-Lamb dessert un territoire couvrant jusqu'à 3 heures de route autour de Warwick, QC : Centre-du-Québec, Estrie, Mauricie, Québec, Montérégie, Beauce et Lanaudière.">
+  <meta name="keywords" content="livraison glace Warwick, territoire livraison glace Québec, Centre-du-Québec glace, Estrie livraison glace, Mauricie fournisseur glace">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
         <div class="logo-icon">❄</div>
-        <div class="logo-text">
-          <span>Glace Frigo-Lamb</span>
-          <span>Warwick, Québec</span>
-        </div>
+        <span>Glace Frigo-Lamb</span>
       </a>
-      <ul class="navbar-nav">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="festivals.html">Festivals &amp; événements</a></li>
-        <li><a href="depanneurs.html">Dépanneurs</a></li>
-        <li><a href="territoire.html">Territoire</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="burger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="festivals.html">Festivals &amp; événements</a>
+        <a href="depanneurs.html">Dépanneurs</a>
+        <a href="territoire.html" class="active">Territoire</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
-    <div class="mobile-nav">
-      <a href="index.html">Accueil</a>
-      <a href="festivals.html">Festivals &amp; événements</a>
-      <a href="depanneurs.html">Dépanneurs</a>
-      <a href="territoire.html">Territoire</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
-    </div>
-  </nav>
+  </header>
 
-  <!-- ===== PAGE HERO ===== -->
+  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Accueil</a>
-        <span>/</span>
-        <span>Territoire desservi</span>
-      </div>
-      <div class="badge" style="background:rgba(0,191,255,0.15);color:#00BFFF;">Zone de livraison</div>
-      <h1>Notre territoire<br>de livraison</h1>
-      <p>Nous desservons un territoire couvrant jusqu'à 3 heures de route autour de Warwick. Vérifiez si votre région est couverte.</p>
-    </div>
-  </section>
-
-  <!-- ===== MAP + REGIONS ===== -->
-  <section>
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Régions desservies</div>
-        <h2>Warwick, Québec — Centre de distribution</h2>
-        <p>Notre entrepôt est situé à Warwick, au cœur du Centre-du-Québec, idéalement positionné pour desservir une vaste région.</p>
-      </div>
-
-      <div class="regions-grid">
-        <div class="region-chip reveal">Centre-du-Québec</div>
-        <div class="region-chip reveal">Estrie</div>
-        <div class="region-chip reveal">Mauricie</div>
-        <div class="region-chip reveal">Région de Québec</div>
-        <div class="region-chip reveal">Montérégie</div>
-        <div class="region-chip reveal">Beauce</div>
-        <div class="region-chip reveal">Lanaudière</div>
-        <div class="region-chip reveal">Et plus encore…</div>
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="current">Territoire desservi</span>
+        </div>
+        <h1>Territoire desservi</h1>
+        <p>Nous desservons un territoire couvrant jusqu'à 3 heures de route autour de Warwick, Québec. Vérifiez si votre région est couverte.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== INFOS TERRITOIRE ===== -->
-  <section class="bg-grey">
+  <!-- COVERAGE INFO -->
+  <section style="background: var(--white); padding: 88px 0;">
     <div class="container">
-      <div class="two-col">
-        <div class="col-visual reveal">🗺️</div>
-        <div class="col-text reveal">
-          <div class="badge">Zone de couverture</div>
-          <h2>3 heures de route autour de Warwick</h2>
-          <p style="margin-bottom:1.25rem">Basé à Warwick au Centre-du-Québec, Glace Frigo-Lamb dessert une vaste zone géographique qui couvre plusieurs régions administratives du Québec.</p>
-          <p style="margin-bottom:1.25rem">Notre position centrale nous permet d'atteindre efficacement les marchés de la Mauricie au nord, de l'Estrie au sud, de la région de Québec à l'est et de la Montérégie à l'ouest.</p>
-          <p style="margin-bottom:1.75rem">Vous n'êtes pas sûr que votre municipalité soit couverte ? Contactez-nous — nous ferons tout pour vous accommoder.</p>
-          <a href="contact.html" class="btn btn-primary">Vérifier ma région</a>
+
+      <div style="text-align: center; margin-bottom: 56px;">
+        <div class="coverage-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          Point central : Warwick, QC J0A 1M0
+        </div>
+        <h2 class="section-title" style="max-width: 600px; margin: 0 auto 16px;">Un rayon de 3 heures autour de Warwick</h2>
+        <p class="section-sub" style="margin: 0 auto; text-align: center;">
+          Depuis notre base à Warwick en Centre-du-Québec, nous livrons dans toutes les directions pour couvrir une grande partie du Québec.
+        </p>
+      </div>
+
+      <div class="territory-info">
+        <div class="territory-text">
+          <h3>Notre zone de couverture</h3>
+          <p>
+            Warwick est stratégiquement situé au coeur du Québec, ce qui nous permet d'atteindre rapidement les principales régions.
+            En 3 heures de route, nous couvrons un territoire incluant des villes comme Québec, Montréal, Sherbrooke, Trois-Rivières, et bien d'autres.
+          </p>
+          <p>
+            Vous n'êtes pas certain que votre région est desservie ? Contactez-nous directement et nous vous confirmerons si nous pouvons vous livrer.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 8px;">
+            <i class="fa-solid fa-phone"></i>
+            Vérifier ma région
+          </a>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.125rem; color: var(--dark-blue); margin-bottom: 20px;">Régions desservies</h3>
+          <div class="regions-grid">
+
+            <div class="region-card">
+              <div class="region-icon">🗺️</div>
+              <h4>Centre-du-Québec</h4>
+              <p>Région d'origine</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🏔️</div>
+              <h4>Estrie</h4>
+              <p>Sherbrooke et région</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🌊</div>
+              <h4>Mauricie</h4>
+              <p>Trois-Rivières et région</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🏛️</div>
+              <h4>Québec</h4>
+              <p>Capitale-Nationale</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🌾</div>
+              <h4>Montérégie</h4>
+              <p>Rive-Sud de Montréal</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🌲</div>
+              <h4>Beauce</h4>
+              <p>Saint-Georges et région</p>
+            </div>
+
+            <div class="region-card">
+              <div class="region-icon">🏞️</div>
+              <h4>Lanaudière</h4>
+              <p>Joliette et région</p>
+            </div>
+
+            <div class="region-card" style="border-color: rgba(0,191,255,0.3); background: rgba(0,191,255,0.04);">
+              <div class="region-icon">❓</div>
+              <h4>Votre région ?</h4>
+              <p><a href="contact.html" style="color: var(--blue); font-weight: 600;">Contactez-nous</a></p>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ADRESSE ===== -->
-  <section>
+  <!-- MAP -->
+  <section class="territory-map-section" style="padding: 72px 0;">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Notre adresse</div>
-        <h2>Trouvez-nous à Warwick</h2>
-        <p>Notre entrepôt de distribution est ouvert sur rendez-vous. Contactez-nous pour planifier votre approvisionnement.</p>
-      </div>
-
-      <div style="max-width:700px;margin:0 auto">
-        <div class="contact-info reveal" style="position:static">
-          <h3>Glace Frigo-Lamb</h3>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📍</div>
-            <div class="contact-detail-text">
-              <span>Adresse</span>
-              <p>21 Rue Saint-Louis E, Warwick, QC J0A 1M0</p>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📞</div>
-            <div class="contact-detail-text">
-              <span>Téléphone</span>
-              <a href="tel:8193585113">819-358-5113</a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <div class="contact-detail-icon">🗺️</div>
-            <div class="contact-detail-text">
-              <span>Zone de livraison</span>
-              <p>Rayon de 3h autour de Warwick</p>
-            </div>
-          </div>
-          <div class="contact-actions">
-            <a href="tel:8193585113" class="btn btn-accent">📞 Appeler maintenant</a>
-            <a href="contact.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.4)">Demander une soumission</a>
-          </div>
-        </div>
+      <div class="section-label">Notre emplacement</div>
+      <h2 class="section-title">Basés à Warwick, au coeur du Québec</h2>
+      <p class="section-sub">21 Rue Saint-Louis E, Warwick, QC J0A 1M0</p>
+      <div class="map-container">
+        <iframe
+          src="https://maps.google.com/maps?q=21+Rue+Saint-Louis+E,+Warwick,+QC+J0A+1M0&output=embed&z=12"
+          title="Emplacement Glace Frigo-Lamb, Warwick QC"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BANNER ===== -->
+  <!-- COVERAGE CALLOUT -->
+  <section style="background: var(--white); padding: 88px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+
+        <div style="background: var(--light-gray); border-radius: 12px; padding: 30px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">🕐</div>
+          <h4 style="color: var(--dark-blue); font-size: 1.5rem; font-weight: 800; margin-bottom: 6px;">3h</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Rayon de livraison maximum depuis Warwick</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 12px; padding: 30px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">🗺️</div>
+          <h4 style="color: var(--dark-blue); font-size: 1.5rem; font-weight: 800; margin-bottom: 6px;">7+</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Régions administratives couvertes</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 12px; padding: 30px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">📍</div>
+          <h4 style="color: var(--dark-blue); font-size: 1.125rem; font-weight: 700; margin-bottom: 6px;">Warwick, QC</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Notre point de distribution central</p>
+        </div>
+
+        <div style="background: var(--light-gray); border-radius: 12px; padding: 30px; text-align: center;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px;">🚛</div>
+          <h4 style="color: var(--dark-blue); font-size: 1.5rem; font-weight: 800; margin-bottom: 6px;">30+</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Années de livraisons dans la région</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Votre région est couverte ?</h2>
-      <p>Contactez-nous pour planifier vos livraisons et obtenir une soumission personnalisée.</p>
-      <div class="cta-buttons">
-        <a href="contact.html" class="btn btn-accent btn-lg">Obtenir une soumission</a>
-        <a href="tel:8193585113" class="btn btn-secondary btn-lg">📞 819-358-5113</a>
-      </div>
+      <h2>Votre région est desservie ? Demandez votre soumission.</h2>
+      <p>Remplissez notre formulaire de contact et obtenez une soumission personnalisée selon vos besoins.</p>
+      <a href="contact.html" class="btn btn-accent btn-lg">
+        <i class="fa-solid fa-paper-plane"></i>
+        Obtenir une soumission
+      </a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="navbar-logo" style="margin-bottom:1rem">
-            <div class="logo-icon">❄</div>
-            <div class="logo-text">
-              <span>Glace Frigo-Lamb</span>
-              <span>Warwick, Québec</span>
-            </div>
-          </div>
-          <p>Fournisseur de glace depuis plus de 30 ans. Livraison pour festivals, événements, dépanneurs et commerces partout au Québec.</p>
+          <h3>❄ Glace Frigo-Lamb</h3>
+          <p>Fournisseur de glace fiable pour les festivals, événements, dépanneurs et commerces du Québec depuis plus de 30 ans.</p>
+          <br>
+          <p>21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -175,21 +222,20 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>
-            21 Rue Saint-Louis E<br>
-            Warwick, QC J0A 1M0<br><br>
-            <a href="tel:8193585113" style="color:rgba(255,255,255,0.7);">819-358-5113</a>
-          </p>
+          <ul>
+            <li><a href="tel:+18193585113">819-358-5113</a></li>
+            <li><a href="contact.html">Demander une soumission</a></li>
+            <li><a href="territoire.html">Territoire desservi</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Glace Frigo-Lamb. Tous droits réservés.</span>
-        <span>Warwick, Québec, Canada</span>
+        <p>&copy; 2025 Glace Frigo-Lamb. Tous droits réservés.</p>
+        <p>Warwick, Québec, Canada</p>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Retour en haut">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,176 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glace Frigo-Lamb — Fournisseur de glace au Québec depuis 30 ans</title>
-  <meta name="description" content="Livraison de glace pour festivals, événements, dépanneurs et commerces. Sacs de 2,5 kg et poches de 7 kg. Territoire : 3h autour de Warwick, QC." />
-  <meta name="keywords" content="livraison glace Québec, fournisseur glace, glace festival, glace événement, glace dépanneur, sac glace 7 kg, Warwick" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glace Frigo-Lamb – Fournisseur de glace au Québec depuis plus de 30 ans</title>
+  <meta name="description" content="Livraison de glace pour festivals, événements, dépanneurs et commerces. Fournisseur fiable depuis plus de 30 ans dans un rayon de 3 heures autour de Warwick, Québec.">
+  <meta name="keywords" content="livraison de glace Québec, fournisseur de glace, glace pour festival, glace pour événement, glace pour dépanneur, sac de glace 7 kg, sac de glace 2.5 kg, livraison de glace Warwick">
+  <meta property="og:title" content="Glace Frigo-Lamb – Fournisseur de glace au Québec">
+  <meta property="og:description" content="Livraison rapide de sacs de glace pour festivals, événements, dépanneurs et commerces depuis plus de 30 ans.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
         <div class="logo-icon">❄</div>
-        <div class="logo-text">
-          <span>Glace Frigo-Lamb</span>
-          <span>Warwick, Québec</span>
-        </div>
+        <span>Glace Frigo-Lamb</span>
       </a>
-      <ul class="navbar-nav">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="festivals.html">Festivals &amp; événements</a></li>
-        <li><a href="depanneurs.html">Dépanneurs</a></li>
-        <li><a href="territoire.html">Territoire</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="burger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="festivals.html">Festivals &amp; événements</a>
+        <a href="depanneurs.html">Dépanneurs</a>
+        <a href="territoire.html">Territoire</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
-    <div class="mobile-nav">
-      <a href="index.html">Accueil</a>
-      <a href="festivals.html">Festivals &amp; événements</a>
-      <a href="depanneurs.html">Dépanneurs</a>
-      <a href="territoire.html">Territoire</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
-    </div>
-  </nav>
+  </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-visual"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-eyebrow">Warwick, Québec</div>
-        <h1>Votre fournisseur de glace partout au Québec <em>depuis plus de 30 ans</em></h1>
-        <p class="hero-sub">Livraison rapide de sacs de glace pour festivals, événements, dépanneurs et commerces. Service fiable, volumes importants, couverture régionale étendue.</p>
-        <div class="hero-ctas">
-          <a href="contact.html" class="btn btn-accent btn-lg">Demander une soumission</a>
-          <a href="contact.html" class="btn btn-secondary btn-lg">Nous contacter</a>
+        <div class="hero-badge">
+          <i class="fa-solid fa-snowflake"></i>
+          Fournisseur de confiance depuis plus de 30 ans
+        </div>
+        <h1>Votre fournisseur de glace <span>partout au Québec</span> depuis plus de 30&nbsp;ans</h1>
+        <p class="hero-sub">Livraison rapide de sacs de glace pour festivals, événements, dépanneurs et commerces. Couvrant un territoire de 3 heures autour de Warwick, QC.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-accent btn-lg">
+            <i class="fa-solid fa-paper-plane"></i>
+            Demander une soumission
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-phone"></i>
+            Nous contacter
+          </a>
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-number">30+</span>
-            <span class="stat-label">ans d'expérience</span>
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Ans d'expérience</div>
           </div>
-<div class="stat">
-            <span class="stat-number">2</span>
-            <span class="stat-label">formats disponibles</span>
+          <div class="stat">
+            <div class="stat-number">3h</div>
+            <div class="stat-label">Rayon de livraison</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Formats disponibles</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Régions desservies</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PRODUITS ===== -->
-  <section class="products-section">
+  <!-- PRODUITS -->
+  <section class="products">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Nos produits</div>
-        <h2>Glace disponible en deux formats</h2>
-        <p>Sacs adaptés à chaque besoin, de la consommation quotidienne aux grandes quantités pour vos événements.</p>
-      </div>
+      <div class="section-label">Nos produits</div>
+      <h2 class="section-title">Des formats adaptés à tous vos besoins</h2>
+      <p class="section-sub">Que vous soyez dépanneur, organisateur d'événements ou commerce, nous avons la glace qu'il vous faut en quantité.</p>
       <div class="products-grid">
-        <div class="product-card reveal">
+
+        <div class="product-card">
           <div class="product-icon">🧊</div>
           <h3>Sac de glace</h3>
-          <div class="product-weight">2,5 kg</div>
-          <p>Format idéal pour la vente au détail, la réfrigération temporaire et les petits événements.</p>
-          <div class="product-tags">
-            <span class="tag">Dépanneurs</span>
-            <span class="tag">Épiceries</span>
-            <span class="tag">Consommation</span>
-            <span class="tag">Événements</span>
-          </div>
+          <span class="product-weight">2,5 kg</span>
+          <ul class="product-uses">
+            <li>Dépanneurs et épiceries</li>
+            <li>Consommation alimentaire</li>
+            <li>Réfrigération temporaire</li>
+            <li>Événements et réceptions</li>
+            <li>Stations-service</li>
+          </ul>
         </div>
-        <div class="product-card reveal">
-          <div class="product-icon">📦</div>
+
+        <div class="product-card">
+          <div class="product-icon">❄️</div>
           <h3>Poche de glace</h3>
-          <div class="product-weight">7 kg</div>
-          <p>Format commercial haute capacité pour les bars, festivals et besoins intensifs en réfrigération.</p>
-          <div class="product-tags">
-            <span class="tag">Festivals</span>
-            <span class="tag">Bars</span>
-            <span class="tag">Événements majeurs</span>
-            <span class="tag">Grands volumes</span>
-          </div>
+          <span class="product-weight">7 kg</span>
+          <ul class="product-uses">
+            <li>Festivals et concerts</li>
+            <li>Bars et restaurants</li>
+            <li>Événements majeurs</li>
+            <li>Besoins commerciaux en gros volumes</li>
+            <li>Mariages et événements corporatifs</li>
+          </ul>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== POURQUOI NOUS ===== -->
-  <section>
+  <!-- POURQUOI NOUS -->
+  <section class="why-us">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Pourquoi nous choisir</div>
-        <h2>La référence glace au Québec</h2>
-        <p>Plus de trois décennies d'expertise au service des commerces et événements du Québec.</p>
-      </div>
+      <div class="section-label">Pourquoi nous choisir</div>
+      <h2 class="section-title">Glace Frigo-Lamb, le partenaire fiable pour votre approvisionnement</h2>
       <div class="why-grid">
-        <div class="why-card reveal">
+
+        <div class="why-item">
           <div class="why-icon">🏆</div>
-          <h3>30 ans d'expérience</h3>
-          <p>Un savoir-faire éprouvé depuis plus de trois décennies dans la distribution de glace.</p>
+          <h4>30 ans d'expérience</h4>
+          <p>Une expertise solide accumulée depuis plus de trois décennies dans la distribution de glace au Québec.</p>
         </div>
-        <div class="why-card reveal">
+
+        <div class="why-item">
           <div class="why-icon">⚡</div>
-          <h3>Service rapide</h3>
-          <p>Livraison efficace pour ne jamais vous laisser en manque, même en haute saison.</p>
+          <h4>Service rapide</h4>
+          <p>Livraisons ponctuelles et efficaces pour ne jamais manquer de glace lors de vos événements.</p>
         </div>
-        <div class="why-card reveal">
-          <div class="why-icon">🚚</div>
-          <h3>Livraison flexible</h3>
-          <p>Planifiez vos livraisons selon vos besoins : régulières, ponctuelles ou d'urgence.</p>
+
+        <div class="why-item">
+          <div class="why-icon">🚛</div>
+          <h4>Livraison flexible</h4>
+          <p>Nous nous adaptons à votre calendrier et à vos besoins en volume, petits comme grands.</p>
         </div>
-        <div class="why-card reveal">
+
+        <div class="why-item">
           <div class="why-icon">🗺️</div>
-          <h3>Couverture étendue</h3>
-          <p>Nous desservons un large territoire dans un rayon de 3 heures autour de Warwick.</p>
+          <h4>Couverture régionale</h4>
+          <p>Un territoire étendu couvrant plusieurs régions du Québec dans un rayon de 3 heures de route.</p>
         </div>
-        <div class="why-card reveal">
+
+        <div class="why-item">
           <div class="why-icon">🤝</div>
-          <h3>Service personnalisé</h3>
-          <p>Une équipe disponible pour répondre à vos besoins spécifiques et trouver les meilleures solutions.</p>
+          <h4>Service personnalisé</h4>
+          <p>Une approche humaine et à l'écoute, aussi bien pour les commerces que pour les événements.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BANNER ===== -->
+  <!-- CLIENTS -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-label">Qui nous servons</div>
+      <h2 class="section-title">Des solutions pour chaque type de client</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🎪</div>
+          <h4>Festivals &amp; événements</h4>
+          <p>Concerts, fêtes municipales, tournois sportifs, mariages — nous gérons les grands volumes avec rigueur.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏪</div>
+          <h4>Dépanneurs &amp; épiceries</h4>
+          <p>Approvisionnement régulier et fiable pour garder vos présentoirs toujours bien remplis.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🍺</div>
+          <h4>Bars &amp; restaurants</h4>
+          <p>Livraisons adaptées à vos heures d'opération et à votre volume de service.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⛽</div>
+          <h4>Stations-service</h4>
+          <p>Sacs prêts à la vente, formats standards compatibles avec vos congélateurs commerciaux.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h4>Chantiers &amp; industries</h4>
+          <p>Glace pour bétonnières et besoins industriels, disponible en grands volumes.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <div class="badge" style="background:rgba(0,191,255,0.15);color:#00BFFF;">Obtenez votre soumission</div>
       <h2>Besoin de glace pour votre événement ou votre commerce ?</h2>
-      <p>Contactez-nous dès aujourd'hui pour une soumission gratuite et sans engagement.</p>
-      <div class="cta-buttons">
-        <a href="contact.html" class="btn btn-accent btn-lg">Obtenir une soumission</a>
-        <a href="tel:8193585113" class="btn btn-secondary btn-lg">📞 819-358-5113</a>
-      </div>
+      <p>Obtenez une soumission rapide et sans engagement. Nous répondons dans les meilleurs délais.</p>
+      <a href="contact.html" class="btn btn-accent btn-lg">
+        <i class="fa-solid fa-paper-plane"></i>
+        Obtenir une soumission
+      </a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="navbar-logo" style="margin-bottom:1rem">
-            <div class="logo-icon">❄</div>
-            <div class="logo-text">
-              <span>Glace Frigo-Lamb</span>
-              <span>Warwick, Québec</span>
-            </div>
-          </div>
-          <p>Fournisseur de glace depuis plus de 30 ans. Livraison pour festivals, événements, dépanneurs et commerces partout au Québec.</p>
+          <h3>❄ Glace Frigo-Lamb</h3>
+          <p>Fournisseur de glace fiable pour les festivals, événements, dépanneurs et commerces du Québec depuis plus de 30 ans.</p>
+          <br>
+          <p>21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -184,21 +233,20 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>
-            21 Rue Saint-Louis E<br>
-            Warwick, QC J0A 1M0<br><br>
-            <a href="tel:8193585113" style="color:rgba(255,255,255,0.7);">819-358-5113</a>
-          </p>
+          <ul>
+            <li><a href="tel:+18193585113">819-358-5113</a></li>
+            <li><a href="contact.html">Demander une soumission</a></li>
+            <li><a href="territoire.html">Territoire desservi</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Glace Frigo-Lamb. Tous droits réservés.</span>
-        <span>Warwick, Québec, Canada</span>
+        <p>&copy; 2025 Glace Frigo-Lamb. Tous droits réservés.</p>
+        <p>Warwick, Québec, Canada</p>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Retour en haut">↑</button>
   <script src="script.js"></script>
 </body>
 </html>

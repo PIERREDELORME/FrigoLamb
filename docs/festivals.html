@@ -1,206 +1,203 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glace pour festivals et événements — Glace Frigo-Lamb</title>
-  <meta name="description" content="Livraison de glace pour festivals, concerts, événements sportifs, fêtes municipales et mariages. Gros volumes disponibles, livraison planifiée." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glace pour festivals &amp; événements – Glace Frigo-Lamb</title>
+  <meta name="description" content="Fournisseur de glace pour festivals, concerts, tournois sportifs et événements corporatifs au Québec. Livraison planifiée et réapprovisionnement disponibles.">
+  <meta name="keywords" content="glace pour festival, glace pour événement, livraison glace festival Québec, fournisseur glace événement, poche glace 7 kg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
         <div class="logo-icon">❄</div>
-        <div class="logo-text">
-          <span>Glace Frigo-Lamb</span>
-          <span>Warwick, Québec</span>
-        </div>
+        <span>Glace Frigo-Lamb</span>
       </a>
-      <ul class="navbar-nav">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="festivals.html">Festivals &amp; événements</a></li>
-        <li><a href="depanneurs.html">Dépanneurs</a></li>
-        <li><a href="territoire.html">Territoire</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="burger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="festivals.html" class="active">Festivals &amp; événements</a>
+        <a href="depanneurs.html">Dépanneurs</a>
+        <a href="territoire.html">Territoire</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
-    <div class="mobile-nav">
-      <a href="index.html">Accueil</a>
-      <a href="festivals.html">Festivals &amp; événements</a>
-      <a href="depanneurs.html">Dépanneurs</a>
-      <a href="territoire.html">Territoire</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
-    </div>
-  </nav>
+  </header>
 
-  <!-- ===== PAGE HERO ===== -->
+  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Accueil</a>
-        <span>/</span>
-        <span>Festivals &amp; événements</span>
-      </div>
-      <div class="badge" style="background:rgba(0,191,255,0.15);color:#00BFFF;">Événementiel</div>
-      <h1>Glace pour festivals<br>et événements</h1>
-      <p>Nous fournissons de la glace pour des événements de toutes tailles partout au Québec. Planification, volumes importants, réapprovisionnement : on s'en occupe.</p>
-    </div>
-  </section>
-
-  <!-- ===== INTRO ===== -->
-  <section>
-    <div class="container">
-      <div class="two-col">
-        <div class="col-text reveal">
-          <div class="badge">Notre expertise événementielle</div>
-          <h2>Un partenaire fiable pour tous vos événements</h2>
-          <p style="margin-bottom:1.25rem">Que vous organisiez un grand festival, un tournoi sportif ou un événement corporatif, Glace Frigo-Lamb assure votre approvisionnement en glace du début à la fin de votre événement.</p>
-          <p style="margin-bottom:1.75rem">Avec plus de 30 ans d'expérience dans la distribution événementielle, nous comprenons les enjeux logistiques et nous nous adaptons à vos contraintes de temps et d'espace.</p>
-          <a href="contact.html" class="btn btn-primary">Planifier mon événement</a>
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span class="sep"><i class="fa-solid fa-chevron-right"></i></span>
+          <span class="current">Festivals &amp; événements</span>
         </div>
-        <div class="col-visual reveal">❄</div>
+        <h1>Glace pour festivals &amp; événements</h1>
+        <p>Nous fournissons de la glace pour des événements de toutes tailles partout au Québec. Livraison planifiée, gros volumes, réapprovisionnement sur demande.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== TYPES D'ÉVÉNEMENTS ===== -->
-  <section class="bg-grey">
+  <!-- INTRO -->
+  <section style="background: var(--white); padding: 80px 0;">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Types d'événements</div>
-        <h2>Nous desservons tous les types d'événements</h2>
-        <p>Des plus intimes aux plus grands rassemblements, nous avons les ressources pour vous fournir la quantité de glace dont vous avez besoin.</p>
-      </div>
-      <div class="photo-grid">
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">🎪</div>
-            <div class="photo-card-label">Festivals</div>
-          </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <div>
+          <div class="section-label">Notre expertise événementielle</div>
+          <h2 class="section-title">Le partenaire glace de vos événements depuis 30 ans</h2>
+          <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 20px; font-size: 1.0625rem;">
+            Que vous organisiez un festival de musique, une fête municipale, un tournoi sportif ou un grand événement corporatif,
+            Glace Frigo-Lamb assure votre approvisionnement en glace du début à la fin.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 30px; font-size: 1.0625rem;">
+            Avec plus de 30 ans d'expérience, nous connaissons les défis logistiques des événements et nous y répondons avec fiabilité et flexibilité.
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i>
+            Demander une soumission
+          </a>
         </div>
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">🎵</div>
-            <div class="photo-card-label">Concerts</div>
-          </div>
-        </div>
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">⚽</div>
-            <div class="photo-card-label">Tournois sportifs</div>
-          </div>
-        </div>
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">🏛️</div>
-            <div class="photo-card-label">Fêtes municipales</div>
-          </div>
-        </div>
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">💼</div>
-            <div class="photo-card-label">Événements corporatifs</div>
-          </div>
-        </div>
-        <div class="photo-card reveal">
-          <div class="photo-card-inner">
-            <div class="photo-card-icon">💍</div>
-            <div class="photo-card-label">Mariages</div>
-          </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div style="background: linear-gradient(135deg, #0f2e52, #1a5090); border-radius: 12px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎪</div>
+          <div style="background: linear-gradient(135deg, #0d3a6e, #1a6ea8); border-radius: 12px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎵</div>
+          <div style="background: linear-gradient(135deg, #082444, #0d3a6e); border-radius: 12px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">⚽</div>
+          <div style="background: linear-gradient(135deg, #0a2a4a, #1a5090); border-radius: 12px; height: 180px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🏙️</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== NOS SERVICES ===== -->
-  <section>
+  <!-- TYPES D'ÉVÉNEMENTS -->
+  <section class="services-section">
     <div class="container">
-      <div class="section-header reveal">
-        <div class="badge">Nos services</div>
-        <h2>Ce que nous offrons pour vos événements</h2>
-        <p>Une offre complète pour couvrir tous vos besoins en glace, avant et pendant votre événement.</p>
-      </div>
+      <div class="section-label">Types d'événements</div>
+      <h2 class="section-title">Nous servons tous les types d'événements</h2>
+      <p class="section-sub">Des petits rassemblements aux grands festivals, notre capacité logistique s'adapte à l'ampleur de votre événement.</p>
       <div class="services-grid">
-        <div class="service-item reveal">
-          <div class="service-icon">📅</div>
-          <div>
-            <h3>Livraison planifiée</h3>
-            <p>Organisation des livraisons en amont selon votre calendrier et vos estimations de consommation.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎪</div>
+          <h4>Festivals</h4>
+          <p>Festivals de musique, de culture et d'arts. Approvisionnement en continu pour tenir toute la durée de l'événement.</p>
         </div>
-        <div class="service-item reveal">
-          <div class="service-icon">🔄</div>
-          <div>
-            <h3>Réapprovisionnement</h3>
-            <p>Service de réapprovisionnement pendant l'événement pour ne jamais vous retrouver à court de glace.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h4>Fêtes municipales</h4>
+          <p>Événements communautaires et célébrations locales. Coordination directe avec les organisateurs.</p>
         </div>
-        <div class="service-item reveal">
-          <div class="service-icon">⚡</div>
-          <div>
-            <h3>Service rapide</h3>
-            <p>Intervention rapide en cas de besoin urgent ou imprévu lors de votre événement.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚽</div>
+          <h4>Tournois sportifs</h4>
+          <p>Hockey, soccer, baseball et autres sports. Glace pour les zones de rafraîchissement et espaces VIP.</p>
         </div>
-        <div class="service-item reveal">
-          <div class="service-icon">📦</div>
-          <div>
-            <h3>Gros volumes disponibles</h3>
-            <p>Capacité de livraison importante pour les événements de grande envergure, peu importe la quantité requise.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h4>Événements corporatifs</h4>
+          <p>Galas, conférences, lancements de produits. Service discret et professionnel.</p>
         </div>
-        <div class="service-item reveal">
-          <div class="service-icon">🤝</div>
-          <div>
-            <h3>Coordination personnalisée</h3>
-            <p>Un interlocuteur dédié pour coordonner la logistique avec votre équipe d'organisation.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">💒</div>
+          <h4>Mariages</h4>
+          <p>Réceptions et banquets. Livraison planifiée selon votre horaire de célébration.</p>
         </div>
-        <div class="service-item reveal">
-          <div class="service-icon">🗺️</div>
-          <div>
-            <h3>Large couverture</h3>
-            <p>Livraisons partout dans un rayon de 3 heures autour de Warwick, couvrant plusieurs régions du Québec.</p>
-          </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎶</div>
+          <h4>Concerts</h4>
+          <p>Spectacles en plein air ou en salle. Réapprovisionnement disponible en cours d'événement.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BANNER ===== -->
+  <!-- NOS SERVICES -->
+  <section style="background: var(--white); padding: 88px 0;">
+    <div class="container">
+      <div class="section-label">Nos services événementiels</div>
+      <h2 class="section-title">Une offre complète pour vos événements</h2>
+      <div class="avantages-list">
+
+        <div class="avantage-item">
+          <div class="avantage-check"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <h4>Livraison planifiée</h4>
+            <p>Nous coordinons la livraison selon votre horaire d'événement pour que tout soit en place au bon moment.</p>
+          </div>
+        </div>
+
+        <div class="avantage-item">
+          <div class="avantage-check"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <h4>Réapprovisionnement en cours d'événement</h4>
+            <p>Si votre événement dure plusieurs jours, nous assurons les livraisons intermédiaires selon vos besoins.</p>
+          </div>
+        </div>
+
+        <div class="avantage-item">
+          <div class="avantage-check"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <h4>Service rapide et réactif</h4>
+            <p>Un besoin de dernière minute ? Nous faisons notre possible pour répondre rapidement aux imprévus.</p>
+          </div>
+        </div>
+
+        <div class="avantage-item">
+          <div class="avantage-check"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <h4>Gros volumes disponibles</h4>
+            <p>Nous avons la capacité de fournir de grandes quantités de glace pour les événements de grande envergure.</p>
+          </div>
+        </div>
+
+        <div class="avantage-item">
+          <div class="avantage-check"><i class="fa-solid fa-check"></i></div>
+          <div>
+            <h4>Poches de glace 7 kg</h4>
+            <p>Le format idéal pour les festivals : facile à manipuler, rentable, disponible en grande quantité.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Votre prochain événement a besoin de glace ?</h2>
-      <p>Contactez-nous maintenant pour planifier votre approvisionnement et obtenir une soumission gratuite.</p>
-      <div class="cta-buttons">
-        <a href="contact.html" class="btn btn-accent btn-lg">Demander une soumission</a>
-        <a href="tel:8193585113" class="btn btn-secondary btn-lg">📞 819-358-5113</a>
-      </div>
+      <h2>Votre prochain événement mérite le meilleur fournisseur de glace</h2>
+      <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins et obtenir une soumission personnalisée.</p>
+      <a href="contact.html" class="btn btn-accent btn-lg">
+        <i class="fa-solid fa-paper-plane"></i>
+        Obtenir une soumission
+      </a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="navbar-logo" style="margin-bottom:1rem">
-            <div class="logo-icon">❄</div>
-            <div class="logo-text">
-              <span>Glace Frigo-Lamb</span>
-              <span>Warwick, Québec</span>
-            </div>
-          </div>
-          <p>Fournisseur de glace depuis plus de 30 ans. Livraison pour festivals, événements, dépanneurs et commerces partout au Québec.</p>
+          <h3>❄ Glace Frigo-Lamb</h3>
+          <p>Fournisseur de glace fiable pour les festivals, événements, dépanneurs et commerces du Québec depuis plus de 30 ans.</p>
+          <br>
+          <p>21 Rue Saint-Louis E<br>Warwick, QC J0A 1M0</p>
         </div>
         <div class="footer-col">
           <h4>Navigation</h4>
@@ -214,21 +211,20 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>
-            21 Rue Saint-Louis E<br>
-            Warwick, QC J0A 1M0<br><br>
-            <a href="tel:8193585113" style="color:rgba(255,255,255,0.7);">819-358-5113</a>
-          </p>
+          <ul>
+            <li><a href="tel:+18193585113">819-358-5113</a></li>
+            <li><a href="contact.html">Demander une soumission</a></li>
+            <li><a href="territoire.html">Territoire desservi</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Glace Frigo-Lamb. Tous droits réservés.</span>
-        <span>Warwick, Québec, Canada</span>
+        <p>&copy; 2025 Glace Frigo-Lamb. Tous droits réservés.</p>
+        <p>Warwick, Québec, Canada</p>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="Retour en haut">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
